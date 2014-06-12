@@ -1,0 +1,2 @@
+mapr-singlenode
+===============
