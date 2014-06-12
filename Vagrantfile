@@ -20,7 +20,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 	config.vm.provider "virtualbox" do |v|
 		v.name = "mapr-singlenode"
 		v.customize ['modifyvm', :id, '--ioapic', 'on']
-		v.customize ['modifyvm', :id, '--cpus', 4]
+		v.customize ['modifyvm', :id, '--cpus', 2]
 		v.customize ['modifyvm', :id, '--memory', 6860]
 		unless File.exists? MAPR_DISK
 			v.customize ['createhd', '--filename', MAPR_DISK, '--size', 100 * 1024]
