@@ -6,7 +6,7 @@ apt-get -y update
 apt-get -y upgrade
 
 ## install hbase and reconfig
-# apt-get -y --allow-unauthenticated install mapr-hbase
+# apt-get -y --allow-unauthenticated install mapr-hbase mapr-hbase-master mapr-hbase-regionserver
 # /opt/mapr/server/configure.sh -C $HOSTNAME -Z $HOSTNAME
 # service mapr-zookeeper restart
 # service mapr-warden restart
