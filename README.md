@@ -1,4 +1,4 @@
-mapr-singlenode
+mapr-basenode
 ===============
 
 A Dockerfile that installs the core MapR packages but does not initialize the cluster. It is intended to be a base image for specialized node containers. 
