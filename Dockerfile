@@ -1,5 +1,6 @@
 FROM ubuntu:14.04
 
+RUN apt-get update
 RUN apt-get -y install openssh-server
 
 RUN useradd -p j8RjLtYv9yrgA -d /home/mapr -m -U mapr
